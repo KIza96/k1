@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="k1.Vistas.Inicio">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="REPASOS" TextColor="Red" FontSize="18" HorizontalTextAlignment="Center" />
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/> <!--fila 0-->
+                    <RowDefinition/> <!--fila 1-->
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/> <!--columna 0-->
+                    <ColumnDefinition/> <!--columna 1-->
+                </Grid.ColumnDefinitions>
+                <Label Text="Usuario" FontSize="20" Grid.Row="0" Grid.Column="0"/>
+                <Entry x:Name="txtUsuario" FontSize="20" Grid.Row="0" Grid.Column="1" />
+                <Label Text="Contraseña" FontSize="20" Grid.Row="1" Grid.Column="0"/>
+                <Entry x:Name="txtContraseña" FontSize="20" Grid.Row="1" Grid.Column="1" />
+            </Grid>
+            <Button x:Name="btnIniciar" Text="Iniciar" Clicked="BtnIniciar_Clicked"/>
+        </StackLayout>
+          
+    </ContentPage.Content>
+</ContentPage>
