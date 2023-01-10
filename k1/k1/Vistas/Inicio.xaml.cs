@@ -25,6 +25,7 @@ namespace k1.Vistas
             //login
             string usuario = "karol";
             string contraseña = "12345";
+            string estado = "1";
             if (usuario == txtUsuario.Text && contraseña == txtContraseña.Text)
             {
                 Navigation.PushAsync(new Registro());
