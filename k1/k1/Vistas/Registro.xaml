@@ -7,9 +7,29 @@
              x:Class="k1.Vistas.Registro">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Label Text="nombre" Grid.Row="0" Grid.Column="0"/>
+                <Entry x:Name="txtnombre" Placeholder="nombre" Grid.Row="0" Grid.Column="1"/>
+                <Label Text="precio" Grid.Row="1" Grid.Column="0"></Label>
+                <Entry x:Name="txtprecio" Placeholder="precio" Keyboard="Numeric"  Grid.Row="1" Grid.Column="1"/>
+                <Label Text="cantidad" Grid.Row="2" Grid.Column="0"/>
+                <Entry x:Name="txtcantidad" Placeholder="cantidad" Keyboard="Numeric"  Grid.Row="2" Grid.Column="1"/>
+            </Grid>
+            <Button x:Name="btncalcular" Text="cqlculqr" Clicked="Btncalcular_Clicked"/>
+
+
+
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

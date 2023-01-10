@@ -16,5 +16,23 @@ namespace k1.Vistas
         {
             InitializeComponent();
         }
+
+        private void Btncalcular_Clicked(object sender, EventArgs e)
+        {
+            try
+            {
+                double precio = Convert.ToDouble(txtprecio.Text);
+                int cantidad = Convert.ToInt32(txtcantidad.Text);
+                double vslor = precio * cantidad;
+                DisplayAlert("resultado", vslor.ToString(), "aceptar");
+            }
+
+            catch (Exception ex)
+            {
+
+                DisplayAlert("alerta", ex.ToString(), "CERRAR");
+            }
+
+        }
     }
 }
